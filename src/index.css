@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .star-before {
+    @apply before:absolute
+    before:w-[50px]
+    before:h-[2px]
+    /* before:bg-[#2C3E50] */
+    before:top-1/2
+    before:-left-[400%];
+  }
+
+  .star-after {
+    @apply after:absolute
+    after:w-[50px]
+    after:h-[2px]
+    /* after:bg-[#2C3E50] */
+    after:top-1/2
+    after:-right-[400%];
+  }
+}
+
+/* .active{
+  background-color: #1ABC9C;
+  padding: 5px 20px;
+  border-radius: 5px;
+} */
